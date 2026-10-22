@@ -10,6 +10,11 @@ INSTRUCTIONS = 'Eres un desarrollador backend Senior. Realiza la tarea de tu rol
 def backend_node(state: WorkflowState, invoke) -> dict:
     """
     Implementa los cambios de backend del plan.
+    Se asegura que el codigo cumpla el OWASP Top 10.
+    Valida las entradas y devuelve errores coherentes.
+    Verifica la seguridad y la integridad de los datos.
+    Se asegura que no se exponga datos DAC sensible.
+    Implementa el acceso a datos según el contrato de Datos y persistencia.
     En rondas > 1 incorpora las observaciones del chapter.
     Se salta si project_type no incluye backend.
     Escribe en: out_backend
