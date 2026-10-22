@@ -14,6 +14,7 @@ def backend_node(state: WorkflowState, invoke) -> dict:
     Valida las entradas y devuelve errores coherentes.
     Verifica la seguridad y la integridad de los datos.
     Se asegura que no se exponga datos DAC sensible.
+    Implementa el acceso a datos según el contrato de Datos y persistencia.
     En rondas > 1 incorpora las observaciones del chapter.
     Se salta si project_type no incluye backend.
     Escribe en: out_backend
